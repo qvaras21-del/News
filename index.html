@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Новости сегодня</title>
+    <meta name="description" content="Последние новости мира, технологий, спорта и бизнеса">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="container header-inner">
+        <a href="#" class="logo">NEWS<span>24</span></a>
+
+        <nav class="nav">
+            <a href="#latest">Последние</a>
+            <a href="#world">Мир</a>
+            <a href="#tech">Технологии</a>
+            <a href="#business">Бизнес</a>
+            <a href="#sport">Спорт</a>
+        </nav>
+
+        <button class="menu-button" onclick="toggleMenu()">☰</button>
+    </div>
+</header>
+
+<main>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <span class="category">ГЛАВНАЯ НОВОСТЬ</span>
+
+                <h1>Последние новости дня в одном месте</h1>
+
+                <p>
+                    Следите за важными событиями мира, технологиями,
+                    бизнесом и спортом.
+                </p>
+
+                <a href="#latest" class="hero-button">Смотреть новости →</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="latest container" id="latest">
+
+        <div class="section-title">
+            <h2>Последние новости</h2>
+            <span id="currentDate"></span>
+        </div>
+
+        <div class="news-grid" id="newsContainer">
+
+            <article class="news-card" data-category="world">
+                <div class="news-image blue">
+                    🌍
+                </div>
+
+                <div class="news-content">
+                    <span class="news-category">МИР</span>
+
+                    <h3>
+                        Главные события дня: что происходит в мире
+                    </h3>
+
+                    <p>
+                        Краткий обзор важных международных событий
+                        и последних новостей.
+                    </p>
+
+                    <div class="news-meta">
+                        <span>Сегодня</span>
+                        <span>•</span>
+                        <span>5 мин чтения</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="news-card" data-category="tech">
+                <div class="news-image purple">
+                    💻
+                </div>
+
+                <div class="news-content">
+                    <span class="news-category">ТЕХНОЛОГИИ</span>
+
+                    <h3>
+                        Новые технологии меняют привычный интернет
+                    </h3>
+
+                    <p>
+                        Разбираемся в последних разработках
+                        и цифровых тенденциях.
+                    </p>
+
+                    <div class="news-meta">
+                        <span>Сегодня</span>
+                        <span>•</span>
+                        <span>4 мин чтения</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="news-card" data-category="business">
+                <div class="news-image green">
+                    📈
+                </div>
+
+                <div class="news-content">
+                    <span class="news-category">БИЗНЕС</span>
+
+                    <h3>
+                        Что происходит на мировых рынках сегодня
+                    </h3>
+
+                    <p>
+                        Ключевые изменения в экономике и бизнесе.
+                    </p>
+
+                    <div class="news-meta">
+                        <span>Сегодня</span>
+                        <span>•</span>
+                        <span>3 мин чтения</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="news-card" data-category="sport">
+                <div class="news-image orange">
+                    ⚽
+                </div>
+
+                <div class="news-content">
+                    <span class="news-category">СПОРТ</span>
+
+                    <h3>
+                        Главные спортивные события последних часов
+                    </h3>
+
+                    <p>
+                        Результаты матчей и самые обсуждаемые
+                        спортивные события.
+                    </p>
+
+                    <div class="news-meta">
+                        <span>Сегодня</span>
+                        <span>•</span>
+                        <span>3 мин чтения</span>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <section class="categories container">
+
+        <h2>Категории</h2>
+
+        <div class="category-buttons">
+            <button onclick="filterNews('all')">Все</button>
+            <button onclick="filterNews('world')">🌍 Мир</button>
+            <button onclick="filterNews('tech')">💻 Технологии</button>
+            <button onclick="filterNews('business')">📈 Бизнес</button>
+            <button onclick="filterNews('sport')">⚽ Спорт</button>
+        </div>
+
+    </section>
+
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div>
+                <div class="logo">NEWS<span>24</span></div>
+                <p>Новости каждый день.</p>
+            </div>
+
+            <div>
+                <p>© 2026 NEWS24</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
